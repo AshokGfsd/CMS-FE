@@ -1,0 +1,72 @@
+.contactCard {
+  position: relative;
+  min-height: 200px;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  overflow: hidden;
+  border-radius: 6px;
+  z-index: 0;
+  
+}
+
+.contactCard>h4 {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: var(--fw-medium);
+}
+
+.contactCard>p {
+  margin-block: 5px;
+  color: var(--secondary-text-color);
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.contactCard>p:not(:first-of-type) {
+  font-size: x-small;
+}
+
+.contactCard>img {
+  position: absolute;
+  object-fit: cover;
+  height: 80%;
+  bottom: 0;
+  right: 0;
+  transform: translate(20%, 0%) rotate(20deg);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.contactCard__delete:hover {
+  color: var(--accent-color);
+}
+
+.contactCard__delete {
+  position: absolute;
+  font-size: x-large;
+  background-color: rgba(240, 248, 255, 0.555);
+  color: rgb(173, 103, 103);
+  bottom: 10px;
+  cursor: pointer;
+  z-index: 992;
+}
+
+.add_pin {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  color: rgb(66, 66, 231);
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 992;
+}
+.add_pin:hover {
+  position: absolute;
+  bottom: 3px;
+  left: 50px;
+  color: rgb(33, 33, 216);
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 992;
+}
